@@ -1,6 +1,14 @@
+import { useState, useContext, createContext } from 'react';
 
-export const MainContext = () => {
+const mainContext = createContext({});
+const useMain = useContext(mainContext);
+
+export const MainProvider = ({ dark, ...rest } : {
+	dark: boolean,
+}) => {
+	const [darkMode, setDarkMode] = useState(dark);
 	return (
-		<>Main Context</>
+		<mainContext.Provider value={[darkMode, setDarkMode]}>
+		</mainContext.Provider>		
 	)
 }
