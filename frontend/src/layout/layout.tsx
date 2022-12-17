@@ -1,10 +1,15 @@
 import { Header } from "./includes/header"
 import { Footer } from "./includes/footer"
 
-export const Layout = () => {
+
+type propTypes = { 
+	children: JSX.Element[] | JSX.Element
+};
+export const Layout = ({children} : propTypes)  => {
 	return (
 		<>
 			<Header/>
+				{children}
 			<Footer/>
 		</>
 	)
