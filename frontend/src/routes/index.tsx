@@ -1,27 +1,27 @@
-import { Home } from "../pages/home";
+import { Landing } from "../pages/landing";
 
 type propTypes = { 
 	path: string,	
 	component: JSX.Element[] | JSX.Element
 };
 export const publicRoutes : propTypes[] = [
-	{ path: '',	component: <Home/>},
-	{ path: '',	component: <Home/>},
-	{ path: '',	component: <Home/>},
-	{ path: '',	component: <Home/>},
-	{ path: '',	component: <Home/>},
+	{ path: '',	component: <Landing/>},
+	{ path: '',	component: <Landing/>},
+	{ path: '',	component: <Landing/>},
+	{ path: '',	component: <Landing/>},
+	{ path: '',	component: <Landing/>},
 ]; 
 export const userRoutes : propTypes[] = [
-	{ path: '',	component: <Home/>},
-	{ path: '',	component: <Home/>},
-	{ path: '',	component: <Home/>},
-	{ path: '',	component: <Home/>},
-	{ path: '',	component: <Home/>},
+	{ path: '',	component: <Landing/>},
+	{ path: '',	component: <Landing/>},
+	{ path: '',	component: <Landing/>},
+	{ path: '',	component: <Landing/>},
+	{ path: '',	component: <Landing/>},
 ]; 
 export const adminRoutes : propTypes[] = [
-	{ path: '',	component: <Home/>},
-	{ path: '',	component: <Home/>},
-	{ path: '',	component: <Home/>},
-	{ path: '',	component: <Home/>},
-	{ path: '',	component: <Home/>},
+	{ path: '',	component: <Landing/>},
+	{ path: '',	component: <Landing/>},
+	{ path: '',	component: <Landing/>},
+	{ path: '',	component: <Landing/>},
+	{ path: '',	component: <Landing/>},
 ]; 

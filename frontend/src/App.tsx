@@ -1,11 +1,13 @@
-import { Routes, Route, Navigate} from "react-router-dom"
 import { adminRoutes, publicRoutes, userRoutes } from "./routes/index"
-import { Layout } from "./layout/layout";
 import { MainContext } from "./context/main.context"; 
-import React, { useContext } from "react"
+import { Routes, Route } from "react-router-dom"
+import { Layout } from "./layout/layout";
+import { useContext, useEffect } from "react"
 
 export function App() {
+
   const { loged, admin } = useContext(MainContext);
+
   return (
     <Routes>
       {publicRoutes.map((route, idx) => (

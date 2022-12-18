@@ -9,7 +9,7 @@ export const Layout = ({children} : propTypes)  => {
 	return (
 		<>
 			<Header/>
-				{children}
+			{children}
 			<Footer/>
 		</>
 	)
